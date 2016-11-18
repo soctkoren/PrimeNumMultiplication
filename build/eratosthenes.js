@@ -3,7 +3,7 @@
 var eratosthenes = function(n) {
 
     let arr = [];
-    let upperLimit = Math.sqrt(n);
+    let upperLimit = Math.ceil(Math.sqrt(n));
     let output = [];
     let maxInputValue = 100000000;
     // Handle n that is too large and bad inputs
@@ -12,7 +12,7 @@ var eratosthenes = function(n) {
     }
 
     // Initially mark all nums from 0 to n as prime 
-    for (let i = 0; i <= n; i++) {
+    for (let i = 0; i < n; i++) {
         arr.push(true);
     }
 
@@ -27,7 +27,7 @@ var eratosthenes = function(n) {
     }
 
     // Push remaining items in array to output
-    for (let i = 2; i <= n; i++) {
+    for (let i = 2; i < n; i++) {
         if(arr[i]) {
             output.push(i);
         }
@@ -39,3 +39,5 @@ module.exports = {
     getAllPrimes: eratosthenes
 } 
 
+
+console.log(eratosthenes(3))
