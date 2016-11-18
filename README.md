@@ -4,7 +4,7 @@ This project is a interview project. The requirements were as follows:
 
 * Write a program that prints out a multiplication table to the nth prime number
 
-* Consider sacle and complexity.
+* Consider scale and complexity.
 
 * Write test and demonstrate TDD.
 
@@ -19,14 +19,15 @@ This project was built on
 
 * Node v6.3.1
 
-install dependencies `npm install`
-install cli globally `sudo npm install -g`
+* install dependencies `npm install`
+
+* install cli globally `sudo npm install -g`
 
 ## Running
 
 After you have installed the global cli command, which is `run-table` type the command with `n` prime table you want
 
-NOTE: if you don't want to globally install the command you can run replace `run-table n` with `Node run.js n`
+NOTE: if you don't want to globally install the command you can replace `run-table n` with `Node run.js n`. However, please be in the root directory when you do this.
 
 e.g
 
@@ -46,7 +47,7 @@ I solved this issue using Prime Number Theorem's estimation for finding the nth 
 
 ## Tests
 
-run tests 'npm test'
+run tests `npm test`
 
 ## License
 
