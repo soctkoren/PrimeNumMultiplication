@@ -20,11 +20,13 @@ This project was built on
 * Node v6.3.1
 
 install dependencies `npm install`
-install cli globally `npm install -g`
+install cli globally `sudo npm install -g`
 
 ## Running
 
 After you have installed the global cli command, which is `run-table` type the command with `n` prime table you want
+
+NOTE: if you don't want to globally install the command you can run replace `run-table n` with `Node run.js n`
 
 e.g
 
