@@ -15,6 +15,9 @@
   ],
   "author": "John Imyeob Kim",
   "license": "ISC",
+  "bin": {
+    "run-table": "run.js"
+  },
   "bugs": {
     "url": "https://github.com/soctkoren/PrimeNumMultiplication/issues"
   },
