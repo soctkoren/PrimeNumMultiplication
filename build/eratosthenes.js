@@ -38,6 +38,3 @@ var eratosthenes = function(n) {
 module.exports = {
     getAllPrimes: eratosthenes
 } 
-
-
-console.log(eratosthenes(3))
