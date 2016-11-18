@@ -2,29 +2,50 @@
 
 This project was a interview project. The requirements were as follows: 
 
-* Write a program that prints out a prime multiplication table up n.
+* Write a program that prints out a multiplication table to the nth prime number
 
 * Consider sacle and complexity.
 
 * Write test and demonstrate TDD.
 
+### DEMO
 
-## Installation
+![picture alt](./assets/10by10.gif "Table gif")
 
-Provide code examples and explanations of how to get the project.
+## Installation / Environment
 
-## API Reference
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+This project was built on
+
+* Node v6.3.1
+
+install dependencies `npm install`
+install cli globally `npm install -g`
+
+## Running
+
+After you have installed the global cli command, which is `run-table` type the command the `n` prime table you want
+
+e.g
+
+`run-table 10`
+
+will output to
+
+![picture alt](./assets/10by10.png "10 by 10 table")
+
+## Logic 
+
+I initially thought to create a, isPrime function, that iterated through the numbers up to n and checked to see if the number was divisible at any point. This would have been about 0(n2) time complexity. However, I did some research and found Sieve of Eratosthenes formula that generated prime numbers in order at O(n * log(log(n))). This made the prime function generation incredibly fast. One issue with this apporach was that the stated problem's input should be the nth prime number, rather than the arbitrary number. 
+
+e.a I need to generate 10 prime numbers, vs find me all prime numbers up to 10 
+
+I solved this issue using Prime Number Theorem's estimation for finding the nth Prime number in constant time. I did add a padding to the estimation to remove potential errors from the estimation. 
 
 ## Tests
 
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+run tests 'npm test'
 
 ## License
 
-A short snippet describing the license (MIT, Apache, etc.)
+A short snippet describing the license (MIT)
