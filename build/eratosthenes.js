@@ -5,6 +5,11 @@ var eratosthenes = function(n) {
     let arr = [];
     let upperLimit = Math.sqrt(n);
     let output = [];
+    let maxInputValue = 100000000;
+    // Handle n that is too large and bad inputs
+    if (typeof n === Number || n > maxInputValue) {
+        throw "Bad input"
+    }
 
     // Initially mark all nums from 0 to n as prime 
     for (let i = 0; i <= n; i++) {
