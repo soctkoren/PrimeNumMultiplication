@@ -1,0 +1,22 @@
+{
+  "name": "interview_project",
+  "version": "1.0.0",
+  "description": "A interview project that prints out a prime multiplication table under n",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soctkoren/PrimeNumMultiplication.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "John Imyeob Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soctkoren/PrimeNumMultiplication/issues"
+  },
+  "homepage": "https://github.com/soctkoren/PrimeNumMultiplication#readme"
+}
